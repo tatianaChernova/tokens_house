@@ -43,7 +43,6 @@
     padding: 0 !important;
     width: 220px !important;
     -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
   }
   .content__blog-inner {
     margin: 5px auto;
