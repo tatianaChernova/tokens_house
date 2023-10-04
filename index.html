@@ -1,0 +1,585 @@
+<!-- Движение фишек реалзовано с помощью Swiper.js, зацикленное движение изображений - меняется количество фишек, расстояние между ними, изменение направления с вертикального на горизонтальное с уменьшением экрана -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOUSE OF GAMBLING</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;450;500;600&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Подключение CSS для Swiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="header__logo" href="#"></a>
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li>
+                                <a class="header__menu-list-link" href="#">About us</a>
+                            </li>
+                            <li>
+                                <a class="header__menu-list-link" href="#">Brands</a>
+                            </li>
+                            <li>
+                                <a class="header__menu-list-link" href="#">Commissions</a>
+                            </li>
+                            <li>
+                                <a class="header__menu-list-link" href="#">News</a>
+                            </li>
+                            <li>
+                                <a class="header__menu-list-link" href="#">Contact us</a>
+                            </li>
+                            <li>
+                                <a class="header__menu-list-link" href="#">Careers</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__buttons">
+                        <button class="header__btn-lang">
+                            <img class="header__btn-lang-img" src="images/lang.svg" alt="Change language">
+                            <p class="header__btn-lang-text">EN</p>
+                        </button>
+                        <div class="header__wide-btns">
+                            <button class="header__btn-log">LOG IN</button>
+                            <button class="header__btn-sign">SIGN UP</button>
+                        </div>
+                        <button class="header__burger">
+                            <span></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="main">
+                <div class="content">
+                    <div class="container">
+                        <div class="content__inner">
+                            <div class="content__text">
+                                <h1 class="content__title">HOUSE OF <span class="colored-text">GAMBLING</span></h1>
+                                <h2 class="content__subtitle">Raise your ROI with direct advertiser</h2>
+                                <button class="content__btn">Become a Partner</button>
+                            </div>
+                            <div class="content__tokens-wrapper">
+                                <div class="swiper content__tokens-line-one">
+                                    <div class="swiper-wrapper">
+                                        <!-- Один повторяющийся блок линии-->
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/shield.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item-captured">
+                                            <img src="images/tokens/dollar.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/soccer-blue.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/m-green.svg" alt="Tokens">
+                                        </div>
+                                        <!-- Конец повторяющегося блока -->
+
+                                        <!-- Один повторяющийся блок линии-->
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/shield.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item-captured">
+                                            <img src="images/tokens/dollar.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/soccer-blue.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/m-green.svg" alt="Tokens">
+                                        </div>
+                                        <!-- Конец повторяющегося блока -->
+
+                                        <!-- Один повторяющийся блок линии-->
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/shield.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item-captured">
+                                            <img src="images/tokens/dollar.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/soccer-blue.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/m-green.svg" alt="Tokens">
+                                        </div>
+                                        <!-- Конец повторяющегося блока -->
+
+                                        <!-- Один повторяющийся блок линии-->
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/shield.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item-captured">
+                                            <img src="images/tokens/dollar.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/soccer-blue.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/m-green.svg" alt="Tokens">
+                                        </div>
+                                        <!-- Конец повторяющегося блока -->
+
+                                        <!-- Один повторяющийся блок линии-->
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/shield.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item-captured">
+                                            <img src="images/tokens/dollar.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/soccer-blue.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/m-green.svg" alt="Tokens">
+                                        </div>
+                                        <!-- Конец повторяющегося блока -->
+                                    </div>
+                                </div>
+                                <div class="swiper content__tokens-line-two">
+                                    <div class="swiper-wrapper">
+                                        <!-- Один повторяющийся блок линии-->
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/m-white.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/timer.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/crown.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item-captured">
+                                            <img src="images/tokens/world.svg" alt="Tokens">
+                                        </div>
+                                        <!-- Конец повторяющегося блока -->
+
+                                        <!-- Один повторяющийся блок линии-->
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/m-white.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/timer.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/crown.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item-captured">
+                                            <img src="images/tokens/world.svg" alt="Tokens">
+                                        </div>
+                                        <!-- Конец повторяющегося блока -->
+
+                                        <!-- Один повторяющийся блок линии-->
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/m-white.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/timer.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/crown.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item-captured">
+                                            <img src="images/tokens/world.svg" alt="Tokens">
+                                        </div>
+                                        <!-- Конец повторяющегося блока -->
+
+                                        <!-- Один повторяющийся блок линии-->
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/m-white.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/timer.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/crown.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item-captured">
+                                            <img src="images/tokens/world.svg" alt="Tokens">
+                                        </div>
+                                        <!-- Конец повторяющегося блока -->
+
+                                        <!-- Один повторяющийся блок линии-->
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/m-white.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/timer.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/crown.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item-captured">
+                                            <img src="images/tokens/world.svg" alt="Tokens">
+                                        </div>
+                                        <!-- Конец повторяющегося блока -->
+
+                                        <!-- Один повторяющийся блок линии-->
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/m-white.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/timer.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/crown.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item-captured">
+                                            <img src="images/tokens/world.svg" alt="Tokens">
+                                        </div>
+                                        <!-- Конец повторяющегося блока -->
+                                    </div>
+                                </div>
+                                <div class="swiper content__tokens-line-three">
+                                    <div class="swiper-wrapper">
+                                        <!-- Один повторяющийся блок линии-->
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/shield.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/soccer-white.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/shield.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/crown.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/m-blue.svg" alt="Tokens">
+                                        </div>
+                                        <!-- Конец повторяющегося блока -->
+
+                                        <!-- Один повторяющийся блок линии-->
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/shield.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/soccer-white.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/shield.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/crown.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/m-blue.svg" alt="Tokens">
+                                        </div>
+                                        <!-- Конец повторяющегося блока -->
+
+                                        <!-- Один повторяющийся блок линии-->
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/shield.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/soccer-white.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/shield.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/crown.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/m-blue.svg" alt="Tokens">
+                                        </div>
+                                        <!-- Конец повторяющегося блока -->
+
+                                        <!-- Один повторяющийся блок линии-->
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/shield.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/soccer-white.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/shield.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/crown.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/m-blue.svg" alt="Tokens">
+                                        </div>
+                                        <!-- Конец повторяющегося блока -->
+                                        
+                                        <!-- Один повторяющийся блок линии-->
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/shield.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/soccer-white.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/shield.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/crown.svg" alt="Tokens">
+                                        </div>
+                                        <div class="swiper-slide content__tokens-item">
+                                            <img src="images/tokens/m-blue.svg" alt="Tokens">
+                                        </div>
+                                        <!-- Конец повторяющегося блока -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content__blog">
+                                <h3 class="content__blog-title">
+                                    BLOG
+                                </h3>
+                                <div class="swiper content__blog-inner">
+                                    <div class="swiper-wrapper">
+
+                                        <a href="/blog.html" class="swiper-slide content__blog-item">
+                                            <p class="content__blog-text">Payment methods: Skrill, Neteller, webmoney,
+                                                Bank transfer</p>
+                                            <p class="content__blog-date">10.02.2023</p>
+                                        </a>
+                                        <a href="#" class="swiper-slide content__blog-item">
+                                            <p class="content__blog-text">Payment methods: Skrill, Neteller, webmoney,
+                                                Bank transfer</p>
+                                            <p class="content__blog-date">10.02.2023</p>
+                                        </a>
+                                        <a href="#" class="swiper-slide content__blog-item">
+                                            <p class="content__blog-text">Payment methods: Skrill, Neteller, webmoney,
+                                                Bank transfer</p>
+                                            <p class="content__blog-date">10.02.2023</p>
+                                        </a>
+                                        <a href="#" class="swiper-slide content__blog-item">
+                                            <p class="content__blog-text">Payment methods: Skrill, Neteller, webmoney,
+                                                Bank transfer</p>
+                                            <p class="content__blog-date">10.02.2023</p>
+                                        </a>
+                                        <a href="#" class="swiper-slide content__blog-item">
+                                            <p class="content__blog-text">Payment methods: Skrill, Neteller, webmoney,
+                                                Bank transfer</p>
+                                            <p class="content__blog-date">10.02.2023</p>
+                                        </a>
+                                        <a href="#" class="swiper-slide content__blog-item">
+                                            <p class="content__blog-text">Payment methods: Skrill, Neteller, webmoney,
+                                                Bank transfer</p>
+                                            <p class="content__blog-date">10.02.2023</p>
+                                        </a>
+                                        <a href="#" class="swiper-slide content__blog-item">
+                                            <p class="content__blog-text">Payment methods: Skrill, Neteller, webmoney,
+                                                Bank transfer</p>
+                                            <p class="content__blog-date">10.02.2023</p>
+                                        </a>
+
+                                    </div>
+                                    <div class="swiper-scrollbar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <nav class="footer__menu">
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-list-item">
+                                <a class="footer__menu-list-link" href="#">Terms & Conditions</a>
+                            </li>
+                            <li class="footer__menu-list-item">
+                                <a class="footer__menu-list-link" href="#">Cookies</a>
+                            </li>
+                            <li class="footer__menu-list-item">
+                                <a class="footer__menu-list-link" href="#">Contacts</a>
+                            </li>
+                            <li class="footer__menu-list-item">
+                                <a class="footer__menu-list-link" href="#">Careers</a>
+                            </li>
+                            <li class="footer__menu-list-item">
+                                <a class="footer__menu-list-link" href="#">Brand Guide</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__social">
+                        <h6 class="footer__social-title">Our social media:</h6>
+                        <div class="footer__social-icons">
+                            <div class="footer__social-icon">
+                                <a href="#" class="footer__social-link">
+                                    <img src="/images/social/twitter.svg" alt="Twitter">
+                                </a>
+                            </div>
+                            <div class="footer__social-icon">
+                                <a href="#" class="footer__social-link">
+                                    <img src="/images/social/facebook.svg" alt="Twitter">
+                                </a>
+                            </div>
+                            <div class="footer__social-icon">
+                                <a href="#" class="footer__social-link">
+                                    <img src="/images/social/instagram.svg" alt="Twitter">
+                                </a>
+                            </div>
+                            <div class="footer__social-icon">
+                                <a href="#" class="footer__social-link">
+                                    <img src="/images/social/linkedin.svg" alt="Twitter">
+                                </a>
+                            </div>
+                            <div class="footer__social-icon">
+                                <a href="#" class="footer__social-link">
+                                    <img src="/images/social/youtube.svg" alt="Twitter">
+                                </a>
+                            </div>
+                            <div class="footer__social-icon">
+                                <a href="#" class="footer__social-link">
+                                    <img src="/images/social/tiktok.svg" alt="Twitter">
+                                </a>
+                            </div>
+                            <div class="footer__social-icon">
+                                <a href="#" class="footer__social-link">
+                                    <img src="/images/social/telegram.svg" alt="Twitter">
+                                </a>
+                            </div>
+                            <div class="footer__social-icon">
+                                <a href="#" class="footer__social-link">
+                                    <img src="/images/social/vk.svg" alt="Twitter">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Подключение JQuery и Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+
+        //     Инициализация сладеров для фишек
+        const swiperOne = new Swiper('.content__tokens-line-one', {
+            loop: true,
+            autoplay: {
+                delay: 800,
+                disableOnInteraction: false,
+                reverseDirection: true,
+            },
+            breakpoints: {
+                1919:
+                {
+                    direction: 'vertical',
+                    slidesPerView: 7,
+                    spaceBetween: 24,
+                },
+                1549: {
+                    direction: 'horizontal',
+                    slidesPerView: 6,
+                    spaceBetween: 18,
+
+                },
+                539: {
+                    direction: 'horizontal',
+                    slidesPerView: 4,
+                    spaceBetween: 12,
+                }
+            },
+        });
+        const swiperTwo = new Swiper('.content__tokens-line-two', {
+            loop: true,
+            autoplay: {
+                delay: 800,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                1919:
+                {
+                    direction: 'vertical',
+                    slidesPerView: 7,
+                    spaceBetween: 24,
+                },
+                1549: {
+                    direction: 'horizontal',
+                    spaceBetween: 18,
+                    slidesPerView: 6,
+                },
+                539: {
+                    direction: 'horizontal',
+                    slidesPerView: 4,
+                    spaceBetween: 12,
+                }
+            },
+        });
+        const swiperThree = new Swiper('.content__tokens-line-three', {
+            loop: true,
+            autoplay: {
+                delay: 800,
+                disableOnInteraction: false,
+                reverseDirection: true,
+            },
+            breakpoints: {
+                1919:
+                {
+                    direction: 'vertical',
+                    slidesPerView: 7,
+                    spaceBetween: 24,
+                },
+                1549: {
+                    direction: 'horizontal',
+                    slidesPerView: 6,
+                    spaceBetween: 18,
+                },
+                539: {
+                    direction: 'horizontal',
+                    slidesPerView: 5,
+                    spaceBetween: 12,
+                }
+            },
+        });
+
+        // Инициализация сладера из раздела Blog
+        var swiper = new Swiper(".content__blog-inner", {
+            direction: 'vertical',
+            slidesPerView: 3.8,
+            loop: true,
+            speed: 400,
+            mousewheel: true,
+            scrollbar: {
+                el: ".swiper-scrollbar",
+            },
+            breakpoints: {
+                1919:
+                {
+                    spaceBetween: 16,
+                },
+                1549: {
+                    spaceBetween: 14,
+                },
+                539: {
+                    spaceBetween: 10,
+                }
+            },
+        });
+
+    </script>
+</body>
+
+</html>
