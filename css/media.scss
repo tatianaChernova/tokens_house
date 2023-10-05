@@ -52,6 +52,9 @@
             margin: 0 17px 0 0 !important;
             padding: 0 !important;
             width: 220px !important;
+        }
+
+        &__tokens-item-captured img {
             -ms-transform: rotate(90deg);
             -webkit-transform: rotate(90deg);
             -moz-transform: rotate(90deg);
@@ -498,11 +501,11 @@
         &__tokens-item-captured img {
             width: 108px;
             height: 49px;
-            -ms-transform: scale(2);
-            -webkit-transform: scale(2);
-            -moz-transform: scale(2);
-            -o-transform: scale(2);
-            transform: scale(2);
+            // -ms-transform: scale(2);
+            // -webkit-transform: scale(2);
+            // -moz-transform: scale(2);
+            // -o-transform: scale(2);
+            // transform: scale(2);
         }
 
         &__blog-title {
