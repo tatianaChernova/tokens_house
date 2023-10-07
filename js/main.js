@@ -11,7 +11,7 @@ $(function () {
         $('.body').toggleClass('lock');
     });
     // Смена порядка линий из фишек после поворота из вертикали в горизонталь
-    if ($(window).width() < 1549) {
+    if ($(window).width() < 1599) {
         $('.content__tokens-line-three').insertBefore('.content__tokens-line-one');
         $('.content__tokens-line-two').insertBefore('.content__tokens-line-one');
     }
