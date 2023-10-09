@@ -99,12 +99,14 @@ html {
     }
 
     &__menu-list-link {
-        &:hover {
+
+        &:hover,
+        &:focus {
             text-decoration: underline;
             color: $primary;
         }
 
-        &:focus {
+        &:active {
             color: $primary;
         }
     }
@@ -212,7 +214,7 @@ html {
     &__tokens-line-two,
     &__tokens-line-three {
         max-height: 100%;
-        // -webkit-, -o-, -moz-
+
     }
 
     &__tokens-line-one .content__tokens-lines,
@@ -223,10 +225,16 @@ html {
         flex-direction: column;
         justify-content: space-around;
         animation: tokens-column 5s linear infinite;
+        -webkit-animation: tokens-column 5s linear infinite;
+        -o-animation: tokens-column 5s linear infinite;
+        -moz-animation: tokens-column 5s linear infinite;
     }
 
     &__tokens-line-two .content__tokens-lines {
         animation-direction: reverse;
+        -webkit-animation-direction: reverse;
+        -o-animation-direction: reverse;
+        -moz-animation-direction: reverse;
     }
 
     &__tokens-inner {
@@ -252,9 +260,28 @@ html {
         }
     }
 
+    @-webkit-keyframes tokens-column {
+        0% {
+            transform: translateY(0%);
+        }
+
+        100% {
+            transform: translateY(-50%);
+        }
+    }
+
+    @-moz-keyframes tokens-column {
+        0% {
+            transform: translateY(0%);
+        }
+
+        100% {
+            transform: translateY(-50%);
+        }
+    }
+
     &__blog {
-        padding-top: 10px;
-        padding-left: 10px;
+        padding: 10px 0 0 10px;
     }
 
     &__blog-page {
@@ -320,7 +347,6 @@ html {
         width: 339px;
         height: 146px !important;
         border-radius: 196px;
-
         background-color: $deep-blue;
 
         &.swiper-slide-active {
@@ -401,11 +427,12 @@ html {
         background-position: top center;
         position: relative;
 
-        &:hover {
+        &:hover,
+        &:focus {
             background-image: url(../images/social/bg-hover.svg);
         }
 
-        &:focus {
+        &:active {
             color: $secondary;
         }
 

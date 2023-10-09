@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 </head>
 
 <body>
@@ -47,15 +48,15 @@
                     </nav>
 
                     <div class="header__buttons">
-                        <button class="header__btn-lang">
+                        <button class="header__btn-lang" type="button">
                             <img class="header__btn-lang-img" src="images/lang.svg" alt="Change language">
-                            <p class="header__btn-lang-text">EN</p>
+                            <span class="header__btn-lang-text">EN</span>
                         </button>
-                        <div class="header__wide-btns">
-                            <button class="header__btn-log">LOG IN</button>
-                            <button class="header__btn-sign">SIGN UP</button>
+                        <div class="header__wide-btns" id="wide-btns">
+                            <button class="header__btn-log" type="button">LOG IN</button>
+                            <button class="header__btn-sign" type="button">SIGN UP</button>
                         </div>
-                        <button class="header__burger">
+                        <button class="header__burger" type="button">
                             <span></span>
                         </button>
                     </div>
@@ -74,6 +75,7 @@
                                 <h2 class="content__subtitle">Raise your ROI with direct advertiser</h2>
                                 <button class="content__btn">Become a Partner</button>
                             </div>
+
                             <div class="content__tokens-wrapper">
                                 <div class="content__tokens-line-one">
                                     <div class="content__tokens-lines">
@@ -217,8 +219,6 @@
                                 </div>
                             </div>
 
-
-
                             <div class="content__blog">
                                 <h3 class="content__blog-title">
                                     BLOG
@@ -342,24 +342,28 @@
         var swiper = new Swiper(".content__blog-inner", {
             direction: 'vertical',
             slidesPerView: 3.8,
-            loop: false,
+            spaceBetween: 16,
+            slidesOffsetAfter: 400,
             speed: 1200,
             mousewheel: true,
             scrollbar: {
                 el: ".swiper-scrollbar",
+                draggable: true,
             },
             breakpoints: {
-                1919:
-                {
-                    spaceBetween: 16,
-                },
-                1549: {
-                    spaceBetween: 14,
-                },
-                539: {
+                319: {
                     spaceBetween: 10,
+                    slidesOffsetAfter: 260,
+                },
+                766: {
+                    spaceBetween: 14,
+                    slidesOffsetAfter: 500,
+                },
+                1919: {
+                    spaceBetween: 16,
+                    slidesOffsetAfter: 400,
                 }
-            },
+            }
         });
 
     </script>

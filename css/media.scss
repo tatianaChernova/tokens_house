@@ -39,7 +39,6 @@
         &__tokens-line-three {
             margin-bottom: 17px;
             height: 100px;
-            // -webkit-, -o-, -moz-
         }
 
         &__tokens-line-one .content__tokens-lines,
@@ -49,10 +48,16 @@
             flex-direction: row;
             align-items: center;
             animation: tokens-row 5s linear infinite;
+            -webkit-animation: tokens-row 5s linear infinite;
+            -o-animation: tokens-row 5s linear infinite;
+            -moz-animation: tokens-row 5s linear infinite;
         }
 
         &__tokens-line-two .content__tokens-lines {
             animation-direction: reverse;
+            -webkit-animation-direction: reverse;
+            -o-animation-direction: reverse;
+            -moz-animation-direction: reverse;
         }
 
         &__tokens-inner {
@@ -70,6 +75,26 @@
         }
 
         @keyframes tokens-row {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @-webkit-keyframes tokens-row {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @-moz-keyframes tokens-row {
             0% {
                 transform: translateX(0%);
             }
@@ -269,10 +294,12 @@
     }
 
     .header {
+        padding: 10px 0 0;
+
         &__inner {
             margin-right: 8px;
             padding: 12px 24px;
-            height: 28px;
+            height: 32px;
 
             &::before {
                 border: 2px solid $primary;
@@ -280,21 +307,20 @@
         }
 
         &__burger {
-            padding-left: 10px;
             order: 1;
             display: block;
             position: relative;
             z-index: 3;
             width: 28px;
-            height: 28px;
+            height: 18px;
 
             span {
                 position: absolute;
                 background-color: $white;
                 left: 0;
                 width: 100%;
-                top: 13px;
-                height: 3px;
+                top: 8px;
+                height: 2px;
                 border-radius: 4px;
                 transition: all 0.3s ease 0s;
             }
@@ -305,14 +331,14 @@
                 background-color: $white;
                 position: absolute;
                 width: 100%;
-                height: 3px;
+                height: 2px;
                 left: 0;
                 border-radius: 4px;
                 transition: all 0.3s ease 0s;
             }
 
             &:before {
-                top: 1px;
+                top: 0;
             }
 
             &:after {
@@ -327,17 +353,17 @@
 
             &.active:before {
                 transform: rotate(45deg);
-                top: 12.5px;
+                top: 8px;
             }
 
             &.active:after {
                 transform: rotate(-45deg);
-                bottom: 12.5px;
+                bottom: 8px;
             }
         }
 
         &__menu {
-            padding: 100px 0 0 0;
+            padding: 95px 0 0 0;
             position: fixed;
             top: -120%;
             left: 0;
@@ -366,29 +392,29 @@
 
         &__menu-list-link {
             font-size: 18px;
-            line-height: 1.33;
+            line-height: 1.3;
         }
 
         &__wide-btns {
-            padding: 30px 10px 92px 10px;
-            position: fixed;
-            top: -150%;
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 0 92px 0;
+            position: absolute;
+            top: -200px;
             left: 0;
-            display: block;
-            width: calc(100vw - 20px);
+            right: 0;
             height: 100%;
             transition: all 0.3s ease 0s;
-            overflow: auto;
 
             &.active {
-                top: 422px;
+                top: 406px;
             }
         }
 
         &__btn-log,
         &__btn-sign {
-            padding: 13px 20px;
-            width: 100%;
+            padding: 11px 20px;
+            width: 50%;
             align-items: center;
         }
 
@@ -402,6 +428,8 @@
     }
 
     .content {
+        margin-bottom: 120px;
+
         &__text {
             padding: 70px 0 0 0;
             margin-bottom: 50px;
@@ -410,7 +438,7 @@
         &__title {
             margin-bottom: 20px;
             font-size: 68px;
-            line-height: 1.08;
+            line-height: 1;
         }
 
         &__subtitle {
@@ -425,10 +453,14 @@
             line-height: 1;
         }
 
+        &__tokens-wrapper {
+            margin-bottom: 80px;
+        }
+
         &__tokens-line-one,
         &__tokens-line-two,
         &__tokens-line-three {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             height: 49px;
         }
 
@@ -455,8 +487,6 @@
 
         &__blog-item {
             padding: 14px 48px;
-            border-radius: 40px;
-            width: fit-content;
             height: auto !important;
         }
 
@@ -485,54 +515,55 @@
 
         &__inner {
             margin-right: 5px;
+            padding: 10px 14px;
+
         }
 
         &__burger {
-            width: 19px;
-            height: 19px;
+            margin: 0 3px;
+            width: 22px;
+            height: 15px;
 
             span {
-                top: 9px;
-                height: 2px;
-            }
-
-            &:before,
-            &:after {
-                height: 2px;
+                top: 6.5px;
             }
 
             &.active:before {
                 transform: rotate(45deg);
-                top: 8.5px;
+                top: 6.5px;
             }
 
             &.active:after {
                 transform: rotate(-45deg);
-                bottom: 8.5px;
+                bottom: 6.5px;
             }
         }
     }
 
     .content {
         &__text {
-            padding: 70px 0 0 0;
-            margin-bottom: 32px;
+            padding: 61px 0 0 0;
+            margin-bottom: 9px;
         }
 
         &__title {
-            margin-bottom: 5px;
+            margin-bottom: 10px;
             font-size: 46px;
         }
 
         &__subtitle {
-            margin-bottom: 24px;
+            margin-bottom: 23px;
             font-size: 20px;
         }
 
         &__btn {
-            padding: 15px 20px;
+            padding: 17px 20px;
             font-size: 18px;
             width: 100%;
+        }
+
+        &__tokens-wrapper {
+            margin-bottom: 63px;
         }
 
         &__tokens-line-one .content__tokens-lines .content__tokens-inner:nth-child(4),
@@ -552,6 +583,8 @@
         &__blog-item {
             margin: 0 auto 10px;
             padding: 10px 32px;
+            width: 274px;
+            border-radius: 40px;
         }
 
         &__blog-text {
@@ -593,12 +626,12 @@
 
         &__menu-list-link {
             font-size: 14px;
-            line-height: 1.42;
+            line-height: 1.53;
         }
 
         &__menu {
             margin-bottom: 13px;
-            padding: 23px 5px 10px 9px;
+            padding: 16px 5px 10px 9px;
         }
 
         &__social {
@@ -608,12 +641,25 @@
         &__social-title {
             margin-bottom: 7px;
             font-size: 14px;
-            line-height: 1.42;
+            line-height: 1.53;
         }
     }
 }
 
 @media (max-width: 420px) {
+
+    .header {
+        &__wide-btns {
+            display: block;
+            width: 100%;
+        }
+
+        &__btn-log,
+        &__btn-sign {
+            width: 100%;
+        }
+    }
+
     .content {
 
         &__tokens-line-one .content__tokens-lines .content__tokens-inner:nth-child(3),
@@ -621,5 +667,14 @@
         &__tokens-line-three .content__tokens-lines .content__tokens-inner:nth-child(3) {
             display: none;
         }
+
+        &__blog {
+            padding: 0;
+        }
+
+        &__blog-item {
+            width: fit-content;
+        }
+
     }
 }

@@ -15,4 +15,9 @@ $(function () {
         $('.content__tokens-line-three').insertBefore('.content__tokens-line-one');
         $('.content__tokens-line-two').insertBefore('.content__tokens-line-one');
     }
-})
+    // if ($(window).width() < 766) {
+    //     let buttons = document.getElementById("wide-btns");
+    //     $('.header__menu').append(buttons);
+    // }
+});
+

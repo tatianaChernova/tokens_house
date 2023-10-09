@@ -99,11 +99,11 @@ html {
   position: relative;
   z-index: 2;
 }
-.header__menu-list-link:hover {
+.header__menu-list-link:hover, .header__menu-list-link:focus {
   text-decoration: underline;
   color: #478BF9;
 }
-.header__menu-list-link:focus {
+.header__menu-list-link:active {
   color: #478BF9;
 }
 .header__buttons {
@@ -230,11 +230,16 @@ html {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  animation: tokens-column 5s linear infinite;
   -webkit-animation: tokens-column 5s linear infinite;
-          animation: tokens-column 5s linear infinite;
+  -o-animation: tokens-column 5s linear infinite;
+  -moz-animation: tokens-column 5s linear infinite;
 }
 .content__tokens-line-two .content__tokens-lines {
   animation-direction: reverse;
+  -webkit-animation-direction: reverse;
+  -o-animation-direction: reverse;
+  -moz-animation-direction: reverse;
 }
 .content__tokens-inner {
   height: 100%;
@@ -253,16 +258,6 @@ html {
   margin-bottom: 22px;
   width: 100px;
 }
-@-webkit-keyframes tokens-column {
-  0% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-  100% {
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-}
 @keyframes tokens-column {
   0% {
     -webkit-transform: translateY(0%);
@@ -273,9 +268,18 @@ html {
             transform: translateY(-50%);
   }
 }
+@-webkit-keyframes tokens-column {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
 .content__blog {
-  padding-top: 10px;
-  padding-left: 10px;
+  padding: 10px 0 0 10px;
 }
 .content__blog-page {
   padding-top: 75px;
@@ -411,10 +415,10 @@ html {
   background-position: top center;
   position: relative;
 }
-.footer__social-icon:hover {
+.footer__social-icon:hover, .footer__social-icon:focus {
   background-image: url(../images/social/bg-hover.svg);
 }
-.footer__social-icon:focus {
+.footer__social-icon:active {
   color: #9DADF2;
 }
 .footer__social-icon img {
