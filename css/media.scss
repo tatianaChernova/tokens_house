@@ -3,9 +3,10 @@
 @media (max-width:1600px) {
     .header {
         &__inner {
-            margin-right: 12px;
+            // margin-right: 12px;
         }
     }
+
 
     .content {
         margin-bottom: 117px;
@@ -16,11 +17,20 @@
             gap: 0;
         }
 
+        &__title-inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
         &__text {
             padding: 100px 0 0 0;
             margin-bottom: 80px;
             text-align: center;
         }
+
+
 
         &__tokens-wrapper {
             margin-bottom: 100px;
@@ -70,6 +80,7 @@
         }
 
         &__tokens-img-captured {
+            margin-bottom: 0;
             width: 220px;
             transform: rotate(270deg);
         }
@@ -118,13 +129,17 @@
     }
 
     .header {
+
         &__inner {
-            margin-right: 10px;
             gap: 10px;
         }
 
+        &__logo {
+            margin-right: 0;
+        }
+
         &__menu-list {
-            gap: 25px;
+            gap: 20px;
         }
 
         &__btn {
@@ -155,11 +170,19 @@
             padding: 24px 28px;
         }
 
-        &__menu-list {
-            margin-left: 60px;
-            max-width: 300px;
-            flex-wrap: wrap;
-            align-items: flex-end;
+        &__logo {
+            max-width: 200px;
+            max-height: 20px;
+        }
+
+        &__menu-list-link {
+            font-size: 14px;
+        }
+
+        &__btn-lang,
+        &__btn-log,
+        &__btn-sign {
+            font-size: 14px;
         }
     }
 
@@ -207,7 +230,7 @@
 
     .header {
         &__inner {
-            padding: 24px 20px;
+            padding: 16px;
 
             &::before {
                 border: 3px solid $primary;
@@ -216,32 +239,33 @@
 
         &__menu-list {
             margin-left: 30px;
-            gap: 20px;
+            gap: 16px;
         }
 
-        &__buttons {
+        &__menu-list-link {
+            font-size: 13px;
+        }
+
+        &__buttons,
+        &__wide-btns {
             gap: 8px;
         }
 
+        &__btn-lang,
         &__btn-log,
         &__btn-sign {
-            padding: 8px 30px;
-            display: block;
-            width: 150px;
-        }
-
-        &__btn-log {
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
-
-        &__wide-btns {
-            display: block;
+            font-size: 13px;
+            padding: 9px;
         }
 
         &__btn-lang {
-            padding: 8px;
             order: 2;
+        }
+    }
+
+    .content {
+        &__title-inner {
+            display: block;
         }
     }
 
@@ -275,12 +299,29 @@
 
     .header {
         &__logo {
-            width: 180px;
+            width: 150px;
             height: 20px;
         }
 
         &__menu-list {
             margin-left: 0;
+            gap: 8px;
+        }
+
+        &__menu-list-link {
+            font-size: 12px;
+        }
+
+        &__buttons,
+        &__wide-btns {
+            gap: 5px;
+        }
+
+        &__btn-lang,
+        &__btn-log,
+        &__btn-sign {
+            font-size: 12px;
+            padding: 6px;
         }
     }
 }
@@ -297,13 +338,18 @@
         padding: 10px 0 0;
 
         &__inner {
-            margin-right: 8px;
-            padding: 12px 24px;
-            height: 32px;
+            margin: 10px 0;
+            padding: 10px 20px 14px;
+            height: 36px;
 
             &::before {
                 border: 2px solid $primary;
             }
+        }
+
+        &__logo {
+            width: 287px;
+            height: 32px;
         }
 
         &__burger {
@@ -415,6 +461,7 @@
         &__btn-sign {
             padding: 11px 20px;
             width: 50%;
+            font-size: 16px;
             align-items: center;
         }
 
@@ -514,7 +561,6 @@
     .header {
 
         &__inner {
-            margin-right: 5px;
             padding: 10px 14px;
 
         }
@@ -656,6 +702,7 @@
 
         &__btn-log,
         &__btn-sign {
+            margin-bottom: 5px;
             width: 100%;
         }
     }
