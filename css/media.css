@@ -355,7 +355,7 @@
     transition: all 0.3s ease 0s;
   }
   .header__wide-btns.active {
-    top: 406px;
+    top: 415px;
   }
   .header__btn-log, .header__btn-sign {
     padding: 11px 20px;
@@ -440,7 +440,7 @@
 }
 @media (max-width: 540px) {
   .header__inner {
-    padding: 10px 14px;
+    padding: 10px 14px 14px;
   }
   .header__burger {
     margin: 0 3px;
